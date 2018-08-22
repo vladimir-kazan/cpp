@@ -1,0 +1,25 @@
+# docker build --no-cache -t cpp -f dockerfiles/Dockerfile dockerfiles
+# docker build -t cpp -f dockerfiles/Dockerfile dockerfiles
+# docker run --rm -it --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -v $(pwd)/.:/root/src cpp
+
+FROM ubuntu:16.04
+
+RUN \
+  sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
+  apt-get update && \
+  apt-get -y upgrade && \
+  apt-get -y install git nasm g++ gdb vim libtool make && \
+  rm -rf /var/lib/apt/lists/*
+
+# Add files.
+ADD root/.gdbinit /root/.gdbinit
+
+
+# Set environment variables.
+ENV HOME /root
+
+# Define working directory.
+WORKDIR /root
+
+# Define default command.
+CMD ["bash"]
