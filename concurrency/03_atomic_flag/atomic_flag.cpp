@@ -15,13 +15,15 @@ public:
     std::thread::id t_id = std::this_thread::get_id();
     std::ostringstream oss;
     oss << "Thread " << t_id << " is waiting..." << std::endl;
-    while( flag.test_and_set() ) { // load processor!
+    // std::memory_order_seq_cst by default with flag.test_and_set()
+    while( flag.test_and_set(std::memory_order_acquire) ) { // load processor!
       std::cout << oss.str();
     };
   }
 
   void unlock(){
-    flag.clear();
+    // flag.clear(); // std::memory_order_seq_cs - heavyweight sync
+    flag.clear(std::memory_order_release); // lightweight sync
   }
 };
 
