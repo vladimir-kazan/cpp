@@ -1,9 +1,10 @@
-LINK_TARGET = main
+LINK_TARGET = atomic_flag
 # CFLAGS = -ggdb -std=c++11 -stdlib=libc++
+# CFLAGS = -std=c++14 -pthread
 CFLAGS = -std=c++11
 
 OBJS =  \
- main.o
+ $(LINK_TARGET).o
 
 REBUILDABLES = $(OBJS) $(LINK_TARGET)_app
 
@@ -25,7 +26,8 @@ $(LINK_TARGET) : $(OBJS)
 
 %.o : %.cpp
 	@echo "\nCompiling..."
-	g++ -g -o $@ -c $< $(CFLAGS)
+	# -g -fno-inline-functions -O0
+	g++ -g -c -o $@ $< $(CFLAGS)
 
 run:
 	@echo
