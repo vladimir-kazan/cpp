@@ -12,5 +12,8 @@ indent_style = space
 indent_size = 2
 
 # Tab indentation (no size specified)
-[Makefile]
+[{Makefile, Makefile.test}]
 indent_style = tab
+
+[*.{cpp,h}]
+indent_size = 4

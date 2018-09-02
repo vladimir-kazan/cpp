@@ -34,3 +34,8 @@
 
 # Debug
 *.dSYM
+
+# Project specific
+dependencies/
+obj/
+bin/
