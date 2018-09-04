@@ -46,7 +46,7 @@ $(TARGET): $(OBJECTS) gtest_main.a
 	@echo "Target..."
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -I../src -lpthread $^ -o $@
 
-%.o : %.cpp $(GTEST_HEADERS)
+%.o : %.cpp
 	@echo "Objects..."
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -I../src -c $< -o $@
 
