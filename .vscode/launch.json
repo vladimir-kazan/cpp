@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "(lldb) Launch",
+        "type": "lldb",
+        "request": "launch",
+        "program": "${workspaceFolder}/src/main.out",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "preLaunchTask": "Build with Clang"
+      },
+      {
+        "name": "(lldb) Debug Current",
+        "type": "lldb",
+        "request": "launch",
+        "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+        "args": [],
+        "cwd": "${fileDirname}",
+        "preLaunchTask": "Build Current with Clang"
+      }
+    ]
+  }
