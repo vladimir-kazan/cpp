@@ -5,10 +5,11 @@
 using namespace std;
 
 struct Item { int x; int y; };
+bool operator==(const Item& left, const Item& right) { return left.x == right.x; }
 
 typedef vector<Item> vItem;
 
-vItem source = {{1}, {2}, {3}};
+vItem source = {{1}, {1}, {3}};
 const int n = 3;
 bool choosen[n];
 
@@ -38,6 +39,7 @@ void find() {
 int main() {
     cout << "Find all permutations:" << endl;
     find();
+    // cout << (source[0] == source[1] ? "true" : "false") << endl;
     return -1;
 }
 

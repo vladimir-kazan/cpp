@@ -4,6 +4,9 @@
         ".env.sample": "shellscript",
         "vector": "cpp",
         "__split_buffer": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "iostream": "cpp",
+        "bitset": "cpp",
+        "ostream": "cpp"
     }
 }

@@ -6,3 +6,4 @@
 
 - get all combinations of a list
 - get all permutations of a list
+- bits manipulations
