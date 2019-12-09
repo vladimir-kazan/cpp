@@ -74,8 +74,27 @@ int main() {
   printTable(9, 1 << 3, 9 & (1 << 3), '&');
   cout << endl;
 
-cout << "  for 9 check if bit #2 (1 << 2) = 4 enabled" << endl;
+  cout << "  for 9 check if bit #2 (1 << 2) = 4 enabled" << endl;
   printTable(9, 1 << 2, 9 & (1 << 2), '&');
+  cout << endl;
 
+  cout << "  Built-in functions:" << endl;
+  int x = 713;
+  cout << "  713 = " << toBinary(713) << endl;
+  cout << "  number of zeros at the beginning — __builtin_clz(x): " << __builtin_clz(x) << endl;
+  cout << "  number of zeros at the end — __builtin_ctz(x): " << __builtin_ctz(x) << endl;
+  cout << "  number of ones — __builtin_popcount(x): " << __builtin_popcount(x) << endl;
+  cout << "  the parity (even or odd) of ones — __builtin_parity(x): " << __builtin_parity(x) << endl;
+  cout << endl;
+
+  cout << "  enable bits:" << endl;
+  int x1 = 0;
+  x1 |= (1<<1);
+  cout << "  0 | (1<<1): " << toBinary(x1) << endl;
+  x1 |= (1<<3);
+  cout << "  x1 |= (1<<3): " << toBinary(x1) << endl;
+  x1 |= (1<<7);
+  cout << "  x1 |= (1<<7): " << toBinary(x1) << endl;
+  cout << "  x1 = " << x1 << endl;
   return 0;
 }
