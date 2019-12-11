@@ -8,3 +8,5 @@
 - get all permutations of a list
 - bits manipulations
 - max subarray sum in O(n)
+
+- bubble sort O(n^2)
