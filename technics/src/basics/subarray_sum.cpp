@@ -29,7 +29,7 @@ string str(T begin, T end)
 int main() {
   cout << "Max subarray sum O(n):" << endl;
   vi data = {-1, 2, 4, -3, 5, 2, -5, 2};
-  cout << str(data.begin(), data.end()) << endl;\
+  cout << str(data.begin(), data.end()) << endl;
   int best = 0, sum =0;
   for (int i = 0; i < data.size(); i += 1) {
     sum = max(data[i], sum + data[i]);
