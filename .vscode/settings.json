@@ -21,6 +21,9 @@
         "random": "cpp",
         "string_view": "cpp",
         "unordered_map": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "sstream": "cpp",
+        "algorithm": "cpp",
+        "__config": "cpp"
     }
 }

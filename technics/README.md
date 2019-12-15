@@ -5,4 +5,7 @@
 3. [src/basics/bit_manipulation.cpp](src/basics/bit_manipulation.cpp)
 4. [src/basics/subarray_sum.cpp](src/basics/subarray_sum.cpp)
 5. [src/sorting_searching/bubble_sort.cpp](src/sorting_searching/bubble_sort.cpp)
+6. [src/sorting_searching/merge_sort.cpp](src/sorting_searching/merge_sort.cpp)
+7. [src/sorting_searching/counting_sort.cpp](src/sorting_searching/counting_sort.cpp)
+7. [src/sorting_searching/array_iterators.cpp](src/sorting_searching/array_iterators.cpp)
 

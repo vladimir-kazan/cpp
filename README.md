@@ -10,3 +10,7 @@
 - max subarray sum in O(n)
 
 - bubble sort O(n^2)
+- merge sort O(n log n)
+- counting sort O(n)
+- array iterator
+
