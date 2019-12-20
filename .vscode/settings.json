@@ -24,6 +24,7 @@
         "utility": "cpp",
         "sstream": "cpp",
         "algorithm": "cpp",
-        "__config": "cpp"
+        "__config": "cpp",
+        "tuple": "cpp"
     }
 }

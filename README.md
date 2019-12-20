@@ -14,3 +14,6 @@
 - counting sort O(n)
 - array iterator
 
+
+## TODO
+https://stackoverflow.com/questions/257288/is-it-possible-to-write-a-template-to-check-for-a-functions-existence
