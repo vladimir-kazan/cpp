@@ -7,5 +7,7 @@
 5. [src/sorting_searching/bubble_sort.cpp](src/sorting_searching/bubble_sort.cpp)
 6. [src/sorting_searching/merge_sort.cpp](src/sorting_searching/merge_sort.cpp)
 7. [src/sorting_searching/counting_sort.cpp](src/sorting_searching/counting_sort.cpp)
-7. [src/sorting_searching/array_iterators.cpp](src/sorting_searching/array_iterators.cpp)
+8. [src/sorting_searching/array_iterators.cpp](src/sorting_searching/array_iterators.cpp)
+9. [src/sorting_searching/scheduling_events.cpp](src/sorting_searching/scheduling_events.cpp) - max amount of events by sorting by the ending time (greedy)
+9. [src/sorting_searching/tasks_and_deadlines.cpp](src/sorting_searching/tasks_and_deadlines.cpp) - sort tasks by deadlines
 

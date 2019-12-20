@@ -13,6 +13,9 @@
 - merge sort O(n log n)
 - counting sort O(n)
 - array iterator
+- vector operations (sort)
+- scheduling events (find max possible events N with greedy)
+- sort tasks by deadlines (maximize `deadline - task end` points)
 
 
 ## TODO
