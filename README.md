@@ -16,6 +16,7 @@
 - vector operations (sort)
 - scheduling events (find max possible events N with greedy)
 - sort tasks by deadlines (maximize `deadline - task end` points)
+- binary search (2 methods)
 
 
 ## TODO

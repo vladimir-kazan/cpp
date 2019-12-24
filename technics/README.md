@@ -9,5 +9,6 @@
 7. [src/sorting_searching/counting_sort.cpp](src/sorting_searching/counting_sort.cpp)
 8. [src/sorting_searching/array_iterators.cpp](src/sorting_searching/array_iterators.cpp)
 9. [src/sorting_searching/scheduling_events.cpp](src/sorting_searching/scheduling_events.cpp) - max amount of events by sorting by the ending time (greedy)
-9. [src/sorting_searching/tasks_and_deadlines.cpp](src/sorting_searching/tasks_and_deadlines.cpp) - sort tasks by deadlines
+10. [src/sorting_searching/tasks_and_deadlines.cpp](src/sorting_searching/tasks_and_deadlines.cpp) - sort tasks by deadlines
+11. [src/sorting_searching/binary_search.cpp](src/sorting_searching/binary_search.cpp) — two ways of binary search
 
