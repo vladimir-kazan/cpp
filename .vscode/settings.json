@@ -26,6 +26,7 @@
         "algorithm": "cpp",
         "__config": "cpp",
         "tuple": "cpp",
-        "__functional_base": "cpp"
+        "__functional_base": "cpp",
+        "istream": "cpp"
     }
 }
