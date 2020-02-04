@@ -30,5 +30,5 @@ int main() {
     cout << "Find all combinations:" << endl;
     vi set{1, 2, 3};
     find(set);
-    return -1;
+    return 0;
 }
